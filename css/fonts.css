@@ -25,12 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow_drop_down:before {
+/*.icon-arrow_drop_down:before {
   content: "\e901";
 }
 .icon-arrow_back_ios:before {
   content: "\e902";
-}
+}*/
 .icon-arrow_forward_ios:before {
   content: "\e903";
 }
@@ -45,6 +45,9 @@
 }
 .icon-plus:before {
   content: "\ea0a";
+}
+.icon-date_range:before {
+  content: "\e900";
 }
 
 
@@ -166,8 +169,17 @@ nav li:last-child a {
   font-style: italic;
 }
 
+/**, div {border: solid 1px red; box-sizing: border-box;}*/
 
-
+input#input_new_date {
+  position: relative;
+  padding-right: 20px;
+}
+.icon-date_range:before {
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+}
 
 
 

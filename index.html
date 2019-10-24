@@ -36,9 +36,13 @@
     <section class="new">
       <h2 class="new_title col mb-4">Добавить проект</h2>
 
+
+
       <div class="form-group row align-items-baseline">
+
         <label class="col-2" for="input_new_kategory">Категория <span class="required">*</span></label>
-        <div class="col-5 row">
+
+        <div class="col-5 row align-items-baseline">
           <select class="form-control col-10" id="input_new_kategory">
             <option>выберите из списка</option>
           </select>
@@ -46,24 +50,107 @@
         </div>
       </div>
 
+
+
       <div class="form-group row align-items-baseline">
+
         <label class="col-2" for="input_new_link">Ссылка <span class="required">*</span></label>
-        <div class="col-5 pl-0">
-          <input type="text" class="form-control col-11" id="input_new_link" >
+
+
+        <div class="col-5 row align-items-baseline">
+          <input type="text" class="form-control col-11 pr-0 mr-0" id="input_new_link" >
         </div>
         <div class="note col-4 pl-0 pr-0">(Рекомендуется использовать латинские буквы без пробела. Необходима для формирования ссылки на саму страницу)</div>
       </div>
 
       <div class="form-group row align-items-baseline">
-        <label class="col-2" for="input_new_words">Ключевые слова <span class="required">*</span></label>
-        <div class="col-5 row">
+        <label class="col-2" for="input_new_words">Ключевые слова</label>
+        <div class="col-5 row align-items-baseline">
           <select class="form-control col-10" placeholder="Enter email" id="input_new_words">
             <option>выберите из списка</option>
           </select>
           <button class="btn btn_input mb-2 btn-light icon-plus ml-2"></button>
         </div>
-        <div class="note col-4 pl-0 pr-0">(Мета-данные страницы для поисковых систем)</div>
+        <div class="note col-4 pl-0">(Мета-данные страницы для поисковых систем)</div>
       </div>
+
+      <div class="form-group row align-items-baseline">
+        <label class="col-2" for="input_new_hash">Хештеги</label>
+        <div class="col-5 row align-items-baseline">
+          <select class="form-control col-10" placeholder="Enter email" id="input_new_hash">
+            <option>выберите из списка</option>
+          </select>
+          <button class="btn btn_input mb-2 btn-light icon-plus ml-2"></button>
+        </div>
+        <div class="note col-4 pl-0 pr-0">(Используются для удобной фильтрации проектов. Можно выбрать не более 3 шт.)</div>
+      </div>
+
+      <div class="form-group row align-items-baseline">
+        <div class="col-2">Координаты</div>
+        <div class="col-5 row pl-0">
+          <div class="new_point col-6">
+            <label class="col-11 pl-0" for="input_new_point1">широта</label>
+            
+            <div class="col-11 pl-0 align-items-baseline">
+              <input type="text" class="form-control col-11" id="input_new_point1" >
+            </div>
+          </div>
+          <div class="new_point col-6">
+            <label class="col-11 pl-0" for="input_new_point1">долгота</label>
+            
+            <div class="col-11 pl-0 align-items-baseline">
+              <input type="text" class="form-control col-11" id="input_new_point1" >
+            </div>
+          </div>
+
+        </div>
+
+        <div class="note col-4 pl-0 pr-0 align-self-end">(Используются для обозначения объекта на карте)</div>
+      </div>
+
+
+
+
+      <div class="form-group row align-items-baseline">
+        <div class="col-2">Координаты</div>
+        <div class="col-5 row pl-0">
+          <div class="new_hight col-6 ">
+            <label class="col-11 pl-0" for="input_new_hight">без постамента</label>
+            
+            <div class="col-12 align-items-baseline row">
+              <input type="text" class="form-control col-8 mr-2" id="input_new_hight" >
+              <select class="form-control col-3 pl-0 pr-0">
+                <option>м</option>
+              </select>
+            </div>
+          </div>
+          <div class="new_hight col-6 ">
+            <label class="col-11 pl-0" for="input_new_hight">без постамента</label>
+            
+            <div class="col-12 align-items-baseline row">
+              <input type="text" class="form-control col-8 mr-2" id="input_new_hight" >
+              <select class="form-control col-3 pl-0 pr-0">
+                <option>м</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group row align-items-baseline">
+        <div class="col-2">Координаты</div>
+        <div class="col-5 row pl-0">
+          <div class="new_point col-6">
+            <label class="col-11 pl-0" for="input_new_date">широта</label>
+            
+            <div class="col-11 pl-0 align-items-baseline">
+              <input type="date" class="form-control col-11 icon-date_range" id="input_new_date" >
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
 
