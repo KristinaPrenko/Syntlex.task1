@@ -35,10 +35,7 @@
     </nav>
     <section class="new">
       <h2 class="new_title col mb-4">Добавить проект</h2>
-
-
-
-      <div class="form-group row align-items-baseline">
+      <div class="form-group row align-items-baseline mb-4">
 
         <label class="col-2" for="input_new_kategory">Категория <span class="required">*</span></label>
 
@@ -46,46 +43,37 @@
           <select class="form-control col-10" id="input_new_kategory">
             <option>выберите из списка</option>
           </select>
-          <button class="btn btn_input mb-2 btn-light icon-plus ml-2"></button>
+          <button class="btn btn_input mb-2 btn-light icon-plus ml-2 border"></button>
         </div>
       </div>
-
-
-
-      <div class="form-group row align-items-baseline">
-
+      <div class="form-group row align-items-baseline mb-4">
         <label class="col-2" for="input_new_link">Ссылка <span class="required">*</span></label>
-
-
         <div class="col-5 row align-items-baseline">
           <input type="text" class="form-control col-11 pr-0 mr-0" id="input_new_link" >
         </div>
         <div class="note col-4 pl-0 pr-0">(Рекомендуется использовать латинские буквы без пробела. Необходима для формирования ссылки на саму страницу)</div>
       </div>
-
-      <div class="form-group row align-items-baseline">
+      <div class="form-group row align-items-baseline mb-4">
         <label class="col-2" for="input_new_words">Ключевые слова</label>
         <div class="col-5 row align-items-baseline">
           <select class="form-control col-10" placeholder="Enter email" id="input_new_words">
             <option>выберите из списка</option>
           </select>
-          <button class="btn btn_input mb-2 btn-light icon-plus ml-2"></button>
+          <button class="btn btn_input mb-2 btn-light icon-plus ml-2 border"></button>
         </div>
         <div class="note col-4 pl-0">(Мета-данные страницы для поисковых систем)</div>
       </div>
-
-      <div class="form-group row align-items-baseline">
+      <div class="form-group row align-items-baseline mb-4">
         <label class="col-2" for="input_new_hash">Хештеги</label>
         <div class="col-5 row align-items-baseline">
           <select class="form-control col-10" placeholder="Enter email" id="input_new_hash">
             <option>выберите из списка</option>
           </select>
-          <button class="btn btn_input mb-2 btn-light icon-plus ml-2"></button>
+          <button class="btn btn_input mb-2 btn-light icon-plus ml-2 border"></button>
         </div>
         <div class="note col-4 pl-0 pr-0">(Используются для удобной фильтрации проектов. Можно выбрать не более 3 шт.)</div>
       </div>
-
-      <div class="form-group row align-items-baseline">
+      <div class="form-group row align-items-baseline mb-4">
         <div class="col-2">Координаты</div>
         <div class="col-5 row pl-0">
           <div class="new_point col-6">
@@ -97,22 +85,15 @@
           </div>
           <div class="new_point col-6">
             <label class="col-11 pl-0" for="input_new_point1">долгота</label>
-            
             <div class="col-11 pl-0 align-items-baseline">
               <input type="text" class="form-control col-11" id="input_new_point1" >
             </div>
           </div>
-
         </div>
-
         <div class="note col-4 pl-0 pr-0 align-self-end">(Используются для обозначения объекта на карте)</div>
       </div>
-
-
-
-
-      <div class="form-group row align-items-baseline">
-        <div class="col-2">Координаты</div>
+      <div class="form-group row align-items-baseline mb-4">
+        <div class="col-2">Высота</div>
         <div class="col-5 row pl-0">
           <div class="new_hight col-6 ">
             <label class="col-11 pl-0" for="input_new_hight">без постамента</label>
@@ -125,7 +106,7 @@
             </div>
           </div>
           <div class="new_hight col-6 ">
-            <label class="col-11 pl-0" for="input_new_hight">без постамента</label>
+            <label class="col-11 pl-0" for="input_new_hight">с постаментом</label>
             
             <div class="col-12 align-items-baseline row">
               <input type="text" class="form-control col-8 mr-2" id="input_new_hight" >
@@ -136,28 +117,219 @@
           </div>
         </div>
       </div>
-
-
-      <div class="form-group row align-items-baseline">
-        <div class="col-2">Координаты</div>
+      <div class="form-group row align-items-baseline mb-4">
+        <div class="col-2">Дата открытия</div>
         <div class="col-5 row pl-0">
           <div class="new_point col-6">
-            <label class="col-11 pl-0" for="input_new_date">широта</label>
-            
             <div class="col-11 pl-0 align-items-baseline">
               <input type="date" class="form-control col-11 icon-date_range" id="input_new_date" >
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
     </section>
-    
+    <div class="collapse_panel">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item border mr-1">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Изображения<span class="required">*</span></a>
+        </li>
 
+        <li class="nav-item border mr-1">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Фотогалерея<span class="required">*</span></a>
+        </li>
+
+        <li class="nav-item border mr-1">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">YouTube</a>
+        </li>
+
+        <li class="nav-item border mr-1">
+          <a class="nav-link" id="model-tab" data-toggle="tab" href="#model" role="tab" aria-controls="model" aria-selected="false">3D модель</a>
+        </li>
+      </ul>
+      <div class="tab-content border-right border-left border-bottom mb-5" id="myTabContent">
+        <div class="tab-pane fade show active p-1 border-right border-left border-bottom warning" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row mb-5 align-items-baseline">
+            <div class="home_left pl-4 col-5 border-right">
+              <div class="row pb-3 align-items-baseline">
+                <p class="pl-3">Основная фотография проекта <span class="text-danger pl-1">*</span></p>
+                <div class="home_btn ml-5">
+                  <input type="file" name="file" id="home-tab_input" class="home-tab_inputBtn" />
+                  <label for="home-tab_input">Приктрепить</label>
+                </div>
+              </div>
+              <div class="home_img pb-3">
+                <img class="home-tab_img icon-delete" src="img/img1.png" alt="">
+                <div class="home_tab_icon icon-delete"></div>
+              </div>
+              <div class="img_text pb-1">Название.jpg</div>
+              <div class="img_text2">42.50 KB</div>
+
+            </div>
+            <div class="home_right pl-4 col-6 mt-2 mb-5 border-left">
+              <div class="row pb-3 align-items-baseline mt-4">
+                <p class="pl-3">Основная фотография проекта <span class="text-danger pl-1">*</span></p>
+                <div class="home_btn ml-5">
+                  <input type="file" name="file" id="home-tab_input" class="home-tab_inputBtn" />
+                  <label for="home-tab_input">Приктрепить</label>
+                </div>
+              </div>
+              <div class="home_img pb-3">
+                <img class="home-tab_img icon-delete" src="img/main_potfolio_icon.png" alt="">
+                <div class="home_tab_icon icon-delete"></div>
+              </div>
+              <div class="img_text pb-1">Название.jpg</div>
+              <div class="img_text2">42.50 KB</div>
+
+            </div>
+          </div>
+          <div class="warning_text">Вы не загрузили фотографии в фотогалерею</div>
+        </div>
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="m-0 p-0 pb-5 pt-3 border">
+            <div class="row p-0 m-0 align-items-baseline pl-4 mb-4">
+              <p class="p-0 m-0 mr-4">Загрузить не менее 5шт.<span class="text-danger pl-1">*</span></p>
+              <div class="home_btn p-0 m-0">
+                <input type="file" name="file" id="home-tab_input" class="home-tab_inputBtn" />
+                <label for="home-tab_input">Загрузить</label>
+              </div>
+            </div>
+            <div class="galery ">
+              <div class="row m-0 p-0 justify-content-between pl-4 pr-4 mb-4">
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery1.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery2.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery3.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery4.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery1.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+              </div>
+              <div class="row m-0 p-0 justify-content-between pl-4 pr-4">
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery1.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery2.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery3.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery4.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+
+                <div class="galery_item">
+                  <div class="galery_card p-0 m-0">
+                    <img class="galery_card_img icon-delete" src="img/galery1.png" alt="">
+                    <div class="home_tab_icon icon-delete"></div>
+                  </div>
+                  <div class="img_text pb-1">Название.jpg</div>
+                  <div class="img_text2">42.50 KB</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+          <div class="form-group row align-items-baseline p-5 m-0">
+            <div class="col-11 row align-items-baseline p-0 m-0">
+              <label class="pr-4" for="input_new_link">YouTube</label>
+              <input type="text" class="form-control col-5 pr-0 mr-0" id="input_new_link" >
+              <div class="note pl-4 pr-0">(Необходимо вставить ссылку с YouTube)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="model" role="tabpanel" aria-labelledby="model-tab">
+          <div class="form-group row align-items-baseline p-5 m-0">
+            <div class="col-12 row align-items-baseline p-0 m-0">
+              <label class="pr-4" for="input_new_link">3D модель</label>
+              <input type="text" class="form-control col-4 pr-0 mr-0" id="input_new_link" >
+              <div class="note pl-4 pr-0 col-6">(Необходимо вставить ссылку со sketchfab.com. Если ссылка не указана, то автоматически подставляется первая фотография из фотогалереи)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bottom">
+    </div>
 
   </main>
 

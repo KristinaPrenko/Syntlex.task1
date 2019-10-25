@@ -147,6 +147,16 @@ nav li:last-child a {
   /*width: 44px;*/
   /*padding-left: 0;*/
 }
+
+
+.bottom {
+  width: 100%;
+  height: 300px;
+  background: blue;
+}
+
+
+
 .icon-user:before {
   font-size: 30px;
   text-align: center;
@@ -163,6 +173,9 @@ nav li:last-child a {
 .required {
   color: red;
 }
+/*.icon-plus:before {
+  
+}*/
 .note {
   font-size: 13px;
   font-family:  'Roboto';
@@ -171,28 +184,107 @@ nav li:last-child a {
 
 /**, div {border: solid 1px red; box-sizing: border-box;}*/
 
-input#input_new_date {
+/*input#input_new_date {
   position: relative;
   padding-right: 20px;
-}
+}*/
 .icon-date_range:before {
   position: absolute;
   right: 5px;
   font-size: 20px;
 }
 
+.home-tab_inputBtn {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.home-tab_inputBtn + label {
+    border: solid 1px #dee2e6;
+    padding: 5px 10px;
+}
+/*.home-tab_inputBtn:focus + label,
+.home-tab_inputBtn + label:hover {
+    background-color: red;
+}*/
+.home-tab_inputBtn + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+/*.left {
+  border: solid 1px red;
+}*/
+
+
+.home_img {
+  height: 146px;
+  width: 238px;
+  position: relative;
+  overflow: hidden;
+}
+.galery_card_img,
+.home-tab_img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.home_right .home_img {
+  height: 80px;
+  width: 140px;
+}
+.home_right .home-tab_img {
+  object-position: left
+
+}
+
+.home_tab_icon {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background: #FFFFFF;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  font-size: 33px;
+}
+.icon-delete:before {
+  margin-left: 3px;
+}
+.img_text {
+  color: #3C8DBC;
+  font-size: 20px;
+  font-family: Segoe UI;
+}
+.img_text2 {
+  color: #707070;
+  font-size: 20px;
+  font-family: Segoe UI;
+}
+
+.warning {
+  position: relative;
+}
+.warning_text {
+  color: #D9534F;
+  font-family: Roboto;
+  font-style: italic;
+  position: absolute;
+  bottom: -45px;
+  left: 15px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.galery_card {
+  height: 203px;
+  width: 190px;
+  position: relative;
+  overflow: hidden;
+}
+.galery_card_img {
+  object-fit: cover;
+  object-position: center;
+}
