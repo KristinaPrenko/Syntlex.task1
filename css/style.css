@@ -174,7 +174,7 @@ nav li:last-child a {
   color: red;
 }
 /*.icon-plus:before {
-  
+
 }*/
 .note {
   font-size: 13px;
@@ -287,4 +287,9 @@ nav li:last-child a {
 .galery_card_img {
   object-fit: cover;
   object-position: center;
+}
+
+
+.form {
+  font-family: 'Roboto';
 }

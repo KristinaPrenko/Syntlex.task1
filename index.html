@@ -6,8 +6,7 @@
   <title>document</title>
   <link rel="stylesheet" href="node_modules/normalize.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="css/fonts.css"/>
-  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
@@ -36,9 +35,7 @@
     <section class="new">
       <h2 class="new_title col mb-4">Добавить проект</h2>
       <div class="form-group row align-items-baseline mb-4">
-
         <label class="col-2" for="input_new_kategory">Категория <span class="required">*</span></label>
-
         <div class="col-5 row align-items-baseline">
           <select class="form-control col-10" id="input_new_kategory">
             <option>выберите из списка</option>
@@ -78,7 +75,6 @@
         <div class="col-5 row pl-0">
           <div class="new_point col-6">
             <label class="col-11 pl-0" for="input_new_point1">широта</label>
-            
             <div class="col-11 pl-0 align-items-baseline">
               <input type="text" class="form-control col-11" id="input_new_point1" >
             </div>
@@ -97,7 +93,6 @@
         <div class="col-5 row pl-0">
           <div class="new_hight col-6 ">
             <label class="col-11 pl-0" for="input_new_hight">без постамента</label>
-            
             <div class="col-12 align-items-baseline row">
               <input type="text" class="form-control col-8 mr-2" id="input_new_hight" >
               <select class="form-control col-3 pl-0 pr-0">
@@ -107,7 +102,6 @@
           </div>
           <div class="new_hight col-6 ">
             <label class="col-11 pl-0" for="input_new_hight">с постаментом</label>
-            
             <div class="col-12 align-items-baseline row">
               <input type="text" class="form-control col-8 mr-2" id="input_new_hight" >
               <select class="form-control col-3 pl-0 pr-0">
@@ -128,20 +122,17 @@
         </div>
       </div>
     </section>
-    <div class="collapse_panel">
+    <section class="collapse_panel">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item border mr-1">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Изображения<span class="required">*</span></a>
         </li>
-
         <li class="nav-item border mr-1">
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Фотогалерея<span class="required">*</span></a>
         </li>
-
         <li class="nav-item border mr-1">
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">YouTube</a>
         </li>
-
         <li class="nav-item border mr-1">
           <a class="nav-link" id="model-tab" data-toggle="tab" href="#model" role="tab" aria-controls="model" aria-selected="false">3D модель</a>
         </li>
@@ -163,9 +154,8 @@
               </div>
               <div class="img_text pb-1">Название.jpg</div>
               <div class="img_text2">42.50 KB</div>
-
             </div>
-            <div class="home_right pl-4 col-6 mt-2 mb-5 border-left">
+            <div class="home_right pl-4 col-6 mt-2 mb-5">
               <div class="row pb-3 align-items-baseline mt-4">
                 <p class="pl-3">Основная фотография проекта <span class="text-danger pl-1">*</span></p>
                 <div class="home_btn ml-5">
@@ -179,12 +169,10 @@
               </div>
               <div class="img_text pb-1">Название.jpg</div>
               <div class="img_text2">42.50 KB</div>
-
             </div>
           </div>
           <div class="warning_text">Вы не загрузили фотографии в фотогалерею</div>
         </div>
-
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           <div class="m-0 p-0 pb-5 pt-3 border">
             <div class="row p-0 m-0 align-items-baseline pl-4 mb-4">
@@ -254,7 +242,6 @@
                   <div class="img_text pb-1">Название.jpg</div>
                   <div class="img_text2">42.50 KB</div>
                 </div>
-
                 <div class="galery_item">
                   <div class="galery_card p-0 m-0">
                     <img class="galery_card_img icon-delete" src="img/galery3.png" alt="">
@@ -263,7 +250,6 @@
                   <div class="img_text pb-1">Название.jpg</div>
                   <div class="img_text2">42.50 KB</div>
                 </div>
-
                 <div class="galery_item">
                   <div class="galery_card p-0 m-0">
                     <img class="galery_card_img icon-delete" src="img/galery4.png" alt="">
@@ -272,7 +258,6 @@
                   <div class="img_text pb-1">Название.jpg</div>
                   <div class="img_text2">42.50 KB</div>
                 </div>
-
                 <div class="galery_item">
                   <div class="galery_card p-0 m-0">
                     <img class="galery_card_img icon-delete" src="img/galery1.png" alt="">
@@ -285,10 +270,7 @@
             </div>
           </div>
         </div>
-
-
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
           <div class="form-group row align-items-baseline p-5 m-0">
             <div class="col-11 row align-items-baseline p-0 m-0">
               <label class="pr-4" for="input_new_link">YouTube</label>
@@ -297,7 +279,6 @@
             </div>
           </div>
         </div>
-
         <div class="tab-pane fade" id="model" role="tabpanel" aria-labelledby="model-tab">
           <div class="form-group row align-items-baseline p-5 m-0">
             <div class="col-12 row align-items-baseline p-0 m-0">
@@ -308,65 +289,132 @@
           </div>
         </div>
       </div>
-      
+    </section>
+    <section class="forms pt-5">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-ru-tab" data-toggle="tab" href="#nav-ru" role="tab" aria-controls="nav-ru" aria-selected="true">ru<span class="required">*</span></a>
+          <a class="nav-item nav-link" id="nav-eng-tab" data-toggle="tab" href="#nav-eng" role="tab" aria-controls="nav-eng" aria-selected="false">eng<span class="required">*</span></a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-ru" role="tabpanel" aria-labelledby="nav-ru-tab">
+          <div class="form p-5 m-o border" id="form-ru" action="login.php">
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_title">Заголовок страницы <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_title">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_fullName">Полное название проекта <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_fullName" required="required">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_desc">Текст <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <textarea class="form__textarea formText" name="comments" placeholder="Your Message..." required="required"></textarea>
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_sculptor">Скульптор</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_sculptor">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_autor">Автор идеи</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_autor">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_place">Место установки</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_place">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_material">Материал</label>
+              <div class="col-5 align-items-baseline m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_material">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-eng" role="tabpanel" aria-labelledby="nav-eng-tab">
+          <div class="form p-5 m-o border" id="form-ru" action="login.php">
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_title">Заголовок страницы <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_title">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_fullName">Полное название проекта <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_fullName" required="required">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_desc">Текст <span class="required">*</span></label>
+              <div class="col-5 m-0 b-0">
+                <textarea class="form__textarea formText" name="comments" placeholder="Your Message..." required="required"></textarea>
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_sculptor">Скульптор</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_sculptor">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_autor">Автор идеи</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_autor">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_place">Место установки</label>
+              <div class="col-5 m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_place">
+              </div>
+            </div>
+            <div class="form-group row align-items-center m-0 p-0 pb-4">
+              <label class="col-2 m-0 p-0" for="form_material">Материал</label>
+              <div class="col-5 align-items-baseline m-0 b-0">
+                <input type="text" class="form-control col-11 pr-0 mr-0" id="form_material">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="buttons row p-0 m-0 pl-4 mt-4 pb-5 mb-5">
+      <button type="submit" class="btn btn-primary">Сохранить</button>
+      <button type="reset" class="btn border ml-2">Отменить</button>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="bottom">
-    </div>
-
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type='text/javaScript' src='tinymce/tinymce.min.js'></script>
+  <script type='text/javaScript' src='tinymce/langs/ru.js'></script>
+  <script>
+    tinymce.init({
+      selector:'textarea',
+      width: 745,
+      height: 313,
+      plugins: [
+        "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+        "table contextmenu directionality emoticons paste textcolor  code",
+        ],
+      toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+      toolbar2: "| responsivefilemanager | link unlink anchor | image media | forecolor backcolor  | print preview code",
+      menubar: false
+    });
+  </script>
 </body>
